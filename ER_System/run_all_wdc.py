@@ -14,7 +14,7 @@ for d in datasets:
             for dk in [True, False]:
                 for da in [True, False]:
                     for run_id in range(5):
-                        cmd = """CUDA_VISIBLE_DEVICES=%d python train_ditto.py \
+                        cmd = """CUDA_VISIBLE_DEVICES=%d python train_er.py \
                           --task %s \
                           --logdir results_wdc/ \
                           --fp16 \
